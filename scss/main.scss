@@ -1,0 +1,77 @@
+@import 'blocks/_header';
+@import 'blocks/_fit';
+@import 'blocks/_darkLight';
+
+
+
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+// body{
+//     min-width: 320px;
+//     font-size: 18px;
+//     line-height: 28px;
+//     font-family: 'Orbitron';
+//     color: #fff;
+// }
+
+[class*="__container"]{
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+.button{
+    background-color: #57b8ff;
+    padding: 21px 34px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+body{
+    position: relative;
+    background: #fff;
+}
+.nav-menu a{
+    transition: .3s ease-in;
+}
+
+.nav-menu a:first-child{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-menu a:hover{
+    color: orange;
+    text-decoration: underline;
+    transition: .3s ease-out;
+}
+
+#w-webflow-badge > img{
+    display: none;
+}
+
+span{
+    color: orange;
+    font-weight: bold;
+}
+
+.owner{
+   position: fixed;
+   left: 100;
+   background-color: #fff;
+   padding: 5px;
+   border-radius: 10px;
+   left: 10px;
+   bottom: 10px;
+   z-index: 12;
+}

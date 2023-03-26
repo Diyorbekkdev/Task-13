@@ -1,0 +1,318 @@
+.header {
+  background-color: #000;
+}
+
+.header__top {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__menu {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header__menu:last-child {
+  margin: 0;
+}
+
+.menu__link {
+  -webkit-transition: color .3s ease 0s;
+  transition: color .3s ease 0s;
+  list-style-type: none;
+  color: #fff;
+}
+
+.menu__link:hover {
+  color: #fac422;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__item {
+  margin: 0 60px 0 0;
+}
+
+.header__action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.action-header__btn {
+  padding: 16px 31px;
+  border: 1px solid #fff;
+}
+
+@media (max-width: 1140px) {
+  .menu__item {
+    margin: 0 40px 0 0;
+  }
+  .action-header__btn {
+    padding: 13px 24px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 110px 0 0 0;
+  }
+}
+
+@media (max-width: 1024px) and (max-width: 992px) {
+  .burger {
+    display: block;
+    position: relative;
+    width: 35px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .burger span {
+    -webkit-transition: -webkit-transform 0s ease .09s;
+    transition: -webkit-transform 0s ease .09s;
+    transition: transform 0s ease .09s;
+    transition: transform 0s ease .09s, -webkit-transform 0s ease .09s;
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  .burger::before, .burger::after {
+    -webkit-transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, -webkit-transform 0.15s ease 0s;
+    transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, -webkit-transform 0.15s ease 0s;
+    transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, transform 0.15s ease 0s;
+    transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, transform 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    left: 0;
+    background-color: #fff;
+  }
+  .burger::before {
+    top: 0;
+  }
+  .burger::after {
+    bottom: 0;
+  }
+  .menu-active .burger span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .menu-active .burger::before {
+    top: calc(50% - 1px);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .menu-active .burger::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: calc(50% - 1px);
+  }
+  .menu-active .burger::before, .menu-active .burger::after {
+    -webkit-transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, -webkit-transform 0.15s ease 0s;
+    transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, -webkit-transform 0.15s ease 0s;
+    transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, transform 0.15s ease 0s;
+    transition: top 0.15s ease 0.15px, bottom 0.15s ease 0.15s, transform 0.15s ease 0s, -webkit-transform 0.15s ease 0s;
+  }
+}
+
+#dark-light {
+  background: transparent;
+}
+
+#dark-light body {
+  background: #fff;
+}
+
+.dark-mode {
+  background: #fff;
+}
+
+.dark {
+  background-color: #d4d3d3;
+}
+
+.dark body * {
+  background: #57B8FF !important;
+}
+
+.dark .nav-menu * {
+  color: #000 !important;
+}
+
+.dark .hero-tittle {
+  color: #000;
+}
+
+.dark .work-btn {
+  color: #000;
+}
+
+.dark .header-button {
+  border: 1px solid black;
+  color: #000;
+}
+
+.dark .w-button {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.dark .video-play-wrapper {
+  border-radius: 100px;
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.dark .hero-right-bg {
+  background-color: #d4d3d3 !important;
+}
+
+.dark .video-tittle {
+  color: #000;
+}
+
+.dark .video-text {
+  color: #000;
+}
+
+.dark .blog-tittle-wrapper h2 {
+  color: #000;
+}
+
+.dark .blog-featured-tittle {
+  color: #000 !important;
+}
+
+.dark .blog-tittle {
+  color: #000 !important;
+}
+
+.dark .logo {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.dark .dropd {
+  -webkit-filter: invert(0) !important;
+          filter: invert(0) !important;
+}
+
+.dark .dropdown-list {
+  background-color: #d4d3d3 !important;
+}
+
+.dark .header {
+  background: #57B8FF !important;
+  -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+          box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+.dark .header .header_right {
+  background: #57B8FF !important;
+}
+
+.dark .header .dark .video-section {
+  background: #57B8FF !important;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+[class*="__container"] {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  background-color: #57b8ff;
+  padding: 21px 34px;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+body {
+  position: relative;
+  background: #fff;
+}
+
+.nav-menu a {
+  -webkit-transition: .3s ease-in;
+  transition: .3s ease-in;
+}
+
+.nav-menu a:first-child {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  color: orange;
+  text-decoration: underline;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+}
+
+#w-webflow-badge > img {
+  display: none;
+}
+
+span {
+  color: orange;
+  font-weight: bold;
+}
+
+.owner {
+  position: fixed;
+  left: 100;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  left: 10px;
+  bottom: 10px;
+  z-index: 12;
+}
+/*# sourceMappingURL=main.css.map */
